@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackEagle Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="BlackEagle Logistics">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tracking">Track Load</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>BlackEagle Logistics</h1>
+            <p>Your cargo, our priority. Fast, secure, and reliable transportation.</p>
+            <a href="#tracking" class="cta-button">Track Your Load</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>BlackEagle Logistics stands as a premier leader in the global cargo transportation market, renowned for delivering tailored logistics solutions that align seamlessly with the unique needs of our diverse clientele. Leveraging a state-of-the-art fleet and advanced technological infrastructure, we consistently uphold the highest standards of operational efficiency, reliability, and safety across every delivery. Our commitment to innovation and excellence enables us to optimize supply chain processes, reduce transit times, and provide real-time visibility, ensuring that our clients’ goods are transported with precision and care. 
+
+                At BlackEagle Logistics, we pride ourselves on our customer-centric approach, offering end-to-end logistics services that include freight forwarding, warehousing, distribution, and supply chain management. Our team of seasoned professionals works tirelessly to anticipate challenges, mitigate risks, and deliver solutions that drive business growth and operational success. By integrating sustainable practices into our operations, we also strive to minimize our environmental impact, contributing to a greener future while maintaining the highest levels of service quality.
+                
+                With a proven track record of excellence and a relentless focus on innovation, BlackEagle Logistics is not just a service provider but a trusted partner in your business journey. We are dedicated to exceeding expectations, fostering long-term relationships, and setting new benchmarks in the logistics industry. Whether you require domestic or international shipping solutions, BlackEagle Logistics is equipped to deliver results that matter.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-truck-moving"></i>
+                <h3>Cargo Transportation</h3>
+                <p>We transport your cargo safely and quickly anywhere in the country.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Integrated Logistics</h3>
+                <p>Complete logistics solutions to optimize your supply chain.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safety & Tracking</h3>
+                <p>24/7 monitoring and advanced technology to ensure the safety of your cargo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Load Section -->
+    <section id="tracking" class="tracking">
+        <h2>Track Your Load</h2>
+        <form id="tracking-form">
+            <input type="text" id="tracking-number" placeholder="Enter Tracking Number" required>
+            <button type="submit">Track</button>
+        </form>
+        <div id="tracking-result"></div>
+    </section>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/myzkpyag" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 BlackEagle Logistics. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/blackeagle_logistics/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+  <!-- Background Music -->
+<audio id="background-music" loop>
+    <source src="assets/background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Music Control Panel -->
+<div class="music-controls">
+    <button id="play-pause-btn">
+        <i class="fas fa-play"></i>
+    </button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+</div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+    <!-- Tidio Chatbot -->
+    <script src="//code.tidio.co/9cuedsexdwzcsf7u9xqcpl5hrhxdspcf.js" async></script>
+</body>
+</html>
